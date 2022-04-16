@@ -34,6 +34,7 @@ router.route('/delete/me').delete(isAuthenticated, deleteMyProfile);
 router.route('/me').get(isAuthenticated, myProfile);
 
 router.route('/user/:id').get(isAuthenticated, getUserProfile);
+
 router.route('/users').get(isAuthenticated, getAllUsers);
 
 module.exports = router;
